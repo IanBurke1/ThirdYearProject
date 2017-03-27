@@ -20,6 +20,13 @@ MEAN is an acronym which stands for MongoDB, Express, Angular2 and Nodejs. The M
 
 # Nodejs
 
-# How to make an ionic 2 app from scratch and run it
+# Ionic Installation
+
+
+```sh
+$ cd dillinger
+$ npm install -d
+$ node app
+```
 
 # How to create a Mongo database
