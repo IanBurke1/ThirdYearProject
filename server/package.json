@@ -1,0 +1,14 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Video Game Review Ionic 2 application",
+    "main": "server.js",
+    "dependencies": {
+        "express": "^4.13.4",
+        "mongoose": "^4.4.12",
+        "body-parser": "^1.4.3",
+        "morgan": "^1.1.1"
+        
+    }
+
+}
