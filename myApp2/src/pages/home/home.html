@@ -7,8 +7,9 @@
 <ion-content>
       <ion-list>
         <ion-item-sliding>
-          <ion-item>
-            
+          <ion-item *ngFor="let review of reviews">
+            {{review.title}}
+            {{post.summary}}
           </ion-item>
         </ion-item-sliding>
       </ion-list>

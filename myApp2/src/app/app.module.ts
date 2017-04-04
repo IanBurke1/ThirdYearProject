@@ -8,10 +8,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-// ref: https://www.npmjs.com/package/ionic2-rating
-// Import Ionic2Rating Module
-import {Ionic2RatingModule } from 'ionic2-rating';
-
 @NgModule({
   declarations: [
     MyApp,
