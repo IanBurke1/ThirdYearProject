@@ -1,15 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Food Outlet Review</ion-title>
+    <ion-title>Game Review</ion-title>
+      <ion-buttons end>
+    <button ion-button icon-only (click)="addReview()"><ion-icon name="add"></ion-icon></button>
+  </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
       <ion-list>
-        <ion-item-sliding>
-          <ion-item *ngFor="let review of reviews">
-            {{review.title}}
-            {{post.summary}}
+        <ion-item-sliding *ngFor="let game of reviews">
+          <ion-item>
+            <h1>{{game.name}}</h1>
+            <p>{{game.review}}</p>
+            {{game.rating}}%
           </ion-item>
         </ion-item-sliding>
       </ion-list>

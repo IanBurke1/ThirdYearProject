@@ -5,12 +5,13 @@ import { ViewController } from 'ionic-angular';
   selector: 'page-addReview',
   templateUrl: 'addReview.html'
 })
-export class addReview {
+export class AddReview {
 
-    
+    //data properties set to any data
     name: any;
     platform: any;
     review: any;
+    rating: any;
  
   constructor(public viewCtrl: ViewController) {
  
@@ -23,11 +24,14 @@ export class addReview {
       { 
           name: this.name, 
           platform: this.platform, 
-          review: this.review 
+          review: this.review,
+          rating: this.rating
       };
       //Closing the model
       this.viewCtrl.dismiss(game);
   }
-
+  close(): void {
+    this.viewCtrl.dismiss();
+  }
   
 }

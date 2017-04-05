@@ -1,7 +1,9 @@
 <ion-header>
  <ion-toolbar>
   <ion-title>Add Review</ion-title>
-
+  <ion-buttons end>
+  <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+  </ion-buttons>
  </ion-toolbar>
 </ion-header>
  
@@ -22,11 +24,11 @@
     </ion-item>
 
     <ion-item>
-        <ion-range min="0" max="5" [(ngModel)]="rating">
+        <ion-range min="0" max="100" [(ngModel)]="rating">
             <ion-label range-left>1</ion-label>
-            <ion-label range-right>5</ion-label>
+            <ion-label range-right>100%</ion-label>
         </ion-range>
     </ion-item>
     
-    <button text-center ion-button full color="danger"><ion-icon name="star"></ion-icon> Add </button>
+    <button text-center ion-button full color="danger" (click)="save()"><ion-icon name="star"></ion-icon> Add </button>
 </ion-content>
