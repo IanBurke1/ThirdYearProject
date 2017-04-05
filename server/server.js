@@ -12,6 +12,8 @@
     //==================================================================================
     //Connect to mongodb database
     mongoose.connect('mongodb://localhost/myAppDB'); 
+    //How to view the reviews in mongodb using commands.
+   // http://stackoverflow.com/questions/24985684/mongodb-show-all-contents-from-all-collections
 
     //How data is logged and parsed
     app.use(morgan('dev')); //Log every request to the console  
@@ -22,6 +24,13 @@
     app.use(methodOverride());
     app.use(cors());
 
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header('Access-Control-Allow-Methods', 'DELETE, PUT');
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+    });
+
     // Mongoose model
     var gameReview = mongoose.model('gameReview', {
         name: String,
@@ -29,10 +38,22 @@
         review: String,
         rating: Number
     });
-    /*
+    
     //==Routing=============================================================================
+     //GET method
+     app.get('/api/gameReviews', function(req, res) {
+         console.log("Getting reviews");
+
+         gameReview.find(function(err, gameReviews) {
+             if (err)
+             res.send(err)
+
+             res.json(gameReviews);
+         });
+     });
+        
         // POST method route 
-    app.post('/api/games', function(req, res) { //request and response parameters
+    app.post('/api/gameReviews', function(req, res) { //request and response parameters
         
         gameReview.create({
             name: req.body.name,
@@ -54,7 +75,7 @@
 
         });
     });
-*/
+
     //node server.js to run server (listen for a connection)
     app.listen(8080);
     console.log("listening on port 8080");
