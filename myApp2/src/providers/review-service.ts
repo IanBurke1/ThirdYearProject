@@ -46,4 +46,11 @@ export class ReviewService {
       });
   }
 
+  deleteReview(id){
+    this.http.delete('http://localhost:8080/api/gameReviews' + id).subscribe((res) => { console.log(res.json());
+    });
+  }
+
+  
+
 }

@@ -15,7 +15,12 @@
 
     <ion-item>
         <ion-label floating>Platform</ion-label>
-        <ion-input [(ngModel)]="platform" type="text"></ion-input>
+    <ion-select [(ngModel)]="platform">
+      <ion-option value="n64">Nintendo64</ion-option>
+      <ion-option value="PS4">PlayStation</ion-option>
+      <ion-option value="Xbox">Xbox</ion-option>
+      <ion-option value="PC">PC</ion-option>
+    </ion-select>
     </ion-item>
 
     <ion-item>

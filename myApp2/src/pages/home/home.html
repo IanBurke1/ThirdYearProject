@@ -5,16 +5,26 @@
     <button ion-button icon-only (click)="addReview()"><ion-icon name="add"></ion-icon></button>
   </ion-buttons>
   </ion-navbar>
+  <ion-searchbar (ionInput)="getItems($event)" (ionCancel)="onCancel($event)"></ion-searchbar>
 </ion-header>
 
 <ion-content>
+  
       <ion-list>
         <ion-item-sliding *ngFor="let game of reviews">
           <ion-item>
             <h1>{{game.name}}</h1>
-            <p>{{game.review}}</p>
+              <p>{{game.platform}}</p>
+              <p> {{game.review}}</p>
+            
             {{game.rating}}%
           </ion-item>
+          
+          <ion-item-options>
+            <button ion-button color="danger" (click)="deleteReview(game)">
+              Delete 
+            </button>
+          </ion-item-options>
         </ion-item-sliding>
       </ion-list>
 
