@@ -76,6 +76,15 @@
         });
     });
 
+    // Delete
+    app.delete('/api/gameReviews/:game_id', function(req, res) {
+        gameReview.remove({
+            _id : req.params.game_id
+        }, function(err, game) {
+
+        });
+    });
+
     //node server.js to run server (listen for a connection)
     app.listen(8080);
     console.log("listening on port 8080");
