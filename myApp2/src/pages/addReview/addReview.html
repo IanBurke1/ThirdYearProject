@@ -2,6 +2,7 @@
  <ion-toolbar>
   <ion-title>Add Review</ion-title>
   <ion-buttons end>
+      <!-- Close review page-->
   <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
   </ion-buttons>
  </ion-toolbar>
@@ -10,11 +11,13 @@
 <ion-content>
     <ion-item>
         <ion-label floating>Name</ion-label>
+        <!-- using ngModel directive to bind an input to a property  -->
         <ion-input [(ngModel)]="name" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label floating>Platform</ion-label>
+        <!-- using ngModel directive to bind an input to a property  -->
     <ion-select [(ngModel)]="platform">
       <ion-option value="n64">Nintendo64</ion-option>
       <ion-option value="PS4">PlayStation</ion-option>
@@ -25,15 +28,17 @@
 
     <ion-item>
         <ion-label floating>Review</ion-label>
+        <!-- using ngModel directive to bind an input to a property  -->
         <ion-input [(ngModel)]="review" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
+        <!-- using ngModel directive to bind an input to a property  -->
         <ion-range min="0" max="100" [(ngModel)]="rating">
             <ion-label range-left>1</ion-label>
             <ion-label range-right>100%</ion-label>
         </ion-range>
     </ion-item>
-    
+    <!-- When user clicks/press add button. save() function is called to pass the data to homepage  -->
     <button text-center ion-button full color="danger" (click)="save()"><ion-icon name="star"></ion-icon> Add </button>
 </ion-content>

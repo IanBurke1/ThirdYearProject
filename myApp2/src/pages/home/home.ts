@@ -14,11 +14,11 @@ export class HomePage {
 
   //Inject provider into constructor. Accessible from anywhere within this class
   constructor(public navCtrl: NavController, public ModalCtrl: ModalController, public reviewService: ReviewService) {
-    
+   // this.initializeItems();
   }
   
   initializeItems(){
-    this.reviews;
+       this.reviews;
   }
 
    getItems(ev: any) {
