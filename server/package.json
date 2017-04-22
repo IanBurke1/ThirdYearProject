@@ -1,14 +1,17 @@
-{
+{   //Package.json holds various metadata relevent to the project. It is used to give information...
+    //to npm that allows it to identify the project as well as handle the project's dependencies.'
     "name": "server",
     "version": "1.0.0",
     "description": "Video Game Review Ionic 2 application",
     "main": "server.js",
     "dependencies": {
-        "express": "^4.13.4",
-        "mongoose": "^4.4.12",
-        "body-parser": "^1.4.3",
-        "morgan": "^1.1.1"
-        
+        "express": "^4.15.2",
+        "mongoose": "^4.9.2",
+        "body-parser": "^1.17.1",
+        "morgan": "^1.8.1",
+        "cors": "^2.8.3",
+        "method-override": "^2.3.8",
+        "http": "0.0.0"
     }
 
 }
