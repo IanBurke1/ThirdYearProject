@@ -2,6 +2,7 @@
   <ion-navbar>
     <ion-title>Game Review</ion-title>
       <ion-buttons end>
+        <!-- Add review page will pop up when user clicks button-->
     <button ion-button icon-only (click)="addReview()"><ion-icon name="add"></ion-icon></button>
   </ion-buttons>
   </ion-navbar>
@@ -11,6 +12,8 @@
 <ion-content>
   
       <ion-list>
+        <!-- for loop to loop through all reviews for list-->
+        <!-- https://ionicframework.com/docs/components/#sliding-list -->
         <ion-item-sliding *ngFor="let game of reviews">
           <ion-item>
             <h1>{{game.name}}</h1>
@@ -21,6 +24,7 @@
           </ion-item>
           
           <ion-item-options>
+            <!-- when the user deletes a review. calls deleteReview method-->
             <button ion-button color="danger" (click)="deleteReview(game)">
               Delete 
             </button>

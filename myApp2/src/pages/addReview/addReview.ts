@@ -20,9 +20,12 @@ export class AddReview {
   }
 
 //When save function is called it passes the data into properties and returns the properties back to homepage.
+//reference: Passing data between pages.. https://www.youtube.com/watch?v=T5iGAAypGBA&t=791s
   save(): void {
+
 // let is a new type of variable similar to var
 // Explained https://www.typescriptlang.org/docs/handbook/variable-declarations.html
+  //game is an object with following properties..     
       let game = 
       { 
           name: this.name, 
