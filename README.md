@@ -75,7 +75,8 @@ Once the MongoDB server and the Node server are running, we can now launch the I
 
 ### Step 3: Launh Ionic 2
 First you must locate the MyApp2 directory containing the Ionic 2 project. Open up another (No.3) command terminal and cd into MyApp2 directory. Once you are inside the directory, enter the following command to run the Ionic app:
--*Note: 'ionic serve' command will run the app on your local browser*
+
+- *Note: 'ionic serve' command will run the app on your local browser*
 - We will be using 'ionic lab'. This feature makes it easy to run the app in a phone frame and with iOS and Android platforms side by side.
 
 ```sh
@@ -85,7 +86,7 @@ $ ionic lab
 ![](https://cloud.githubusercontent.com/assets/22341150/25341218/0d8f87a6-2900-11e7-9cc2-2de0ce364e6a.PNG)
 
 
-Once the Ionic app is running, you can test it out!
+'Once the Ionic app is running, you can test it out!'
 
 
 
