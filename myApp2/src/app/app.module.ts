@@ -11,8 +11,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   App.module.ts is basically where you bring in all other components and add them to ngModule
   Angular2 requires every single app to have a ngModule declaration
   Every app has a root module that controls the rest of the application. 
-
-  
 */
 //NgModules help organise an application into cohesive blocks of functionality.
 //@ngModule takes a metadata object that tells angular how to compile and run module code.
