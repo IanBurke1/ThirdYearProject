@@ -15,6 +15,8 @@ $ cd/
 ```
 
 ![](https://cloud.githubusercontent.com/assets/22341150/25337063/212c8628-28f2-11e7-962a-9c059f93e79c.PNG) 
+
+
 Cd/ will change back to the root directory.
 Once in the root directory, we need to go into the Program Files directory
 
