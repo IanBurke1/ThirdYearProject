@@ -5,7 +5,7 @@ Check out the [Wiki](https://github.com/ianburkeixiv/ThirdYearProject/wiki) for 
 Download the [Install&ConfigManual](https://github.com/ianburkeixiv/ThirdYearProject/raw/master/Install%26ConfigManual.docx) word document above to install the various technologies used in this project.
 
 # User Guide
-Once the installation and configuration is done. Here are the following steps on how to run the the database, server and the ionic app together. Download MyApp2/ folder and [Server folder](https://github.com/ianburkeixiv/ThirdYearProject/tree/master/server) above.
+Once the installation and configuration is done. Here are the following steps on how to run the the database, server and the ionic app together. Download [MyApp2/](https://github.com/ianburkeixiv/ThirdYearProject/tree/master/myApp2) folder and [Server folder](https://github.com/ianburkeixiv/ThirdYearProject/tree/master/server) above.
 
 ### Step 1: Launch MongoDB server
 To launch the MongoDB server, we must locate the executable files in the MongoDB Server binary folder. Open a command terminal and enter the following:
