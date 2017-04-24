@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 //https://ionicframework.com/docs/cli/generate/
 
 //Reference: https://www.youtube.com/watch?v=ARkSm0KWHaE
-
+//Provider Reference: https://www.joshmorony.com/building-a-review-app-with-ionic-2-mongodb-node/
 /*
   Angular's Dependency Injection explained: https://angular.io/docs/ts/latest/guide/dependency-injection.html
 */
