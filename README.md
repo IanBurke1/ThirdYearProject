@@ -88,5 +88,9 @@ $ ionic lab
 
 'Once the Ionic app is running, you can test it out!'
 
+![](https://cloud.githubusercontent.com/assets/22341150/25342669/9d58dd02-2904-11e7-9af2-092630a6def2.PNG)
+
+![](https://cloud.githubusercontent.com/assets/22341150/25342685/a46b6b46-2904-11e7-9325-7f7d3b0559ec.PNG)
+
 
 
