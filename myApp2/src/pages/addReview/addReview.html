@@ -34,7 +34,7 @@
 
     <ion-item>
         <!-- using ngModel directive to bind an input to a property  -->
-        <ion-range min="0" max="100" [(ngModel)]="rating">
+        <ion-range min="0" max="100" pin="true" [(ngModel)]="rating">
             <ion-label range-left>1</ion-label>
             <ion-label range-right>100%</ion-label>
         </ion-range>
