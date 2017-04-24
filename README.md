@@ -12,18 +12,20 @@ To launch the MongoDB server, we must locate the executable files in the MongoDB
 ```sh
 $ cd/
 ```
+![](https://cloud.githubusercontent.com/assets/22341150/25337063/212c8628-28f2-11e7-962a-9c059f93e79c.PNG) 
 Cd/ will change back to the root directory.
-![](https://cloud.githubusercontent.com/assets/22341150/25337063/212c8628-28f2-11e7-962a-9c059f93e79c.PNG)
 Once in the root directory, we need to go into the Program Files directory
 ```sh
 $ cd "Program Files" 
 ```
 ![](https://cloud.githubusercontent.com/assets/22341150/25337079/332561f6-28f2-11e7-87e6-18631152e20e.PNG)
+
 *A shortcut to this is typing the first few words like "pro" and then press the tab button to bring up the full word*. Once in the Program Files directory, we must go into the MongoDB directory.
 ```sh
 $ cd MongoDB 
 ```
 ![](https://cloud.githubusercontent.com/assets/22341150/25337082/3b1766b6-28f2-11e7-9ad9-79dc5891b573.PNG)
+
 Then cd into the server directory 
 ```sh
 $ cd server 
