@@ -18,7 +18,7 @@
     <ion-item>
         <ion-label floating>Platform</ion-label>
         <!-- using ngModel directive to bind an input to a property  -->
-    <ion-select [(ngModel)]="platform">
+    <ion-select [(ngModel)]="platform" okText="Select" cancelText="Dismiss">
       <ion-option value="n64">Nintendo64</ion-option>
       <ion-option value="PS4">PlayStation</ion-option>
       <ion-option value="Xbox">Xbox</ion-option>
