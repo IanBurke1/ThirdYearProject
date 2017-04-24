@@ -1,6 +1,10 @@
 # Design Document
 Check out the [Wiki](https://github.com/ianburkeixiv/ThirdYearProject/wiki) for the design document
 
+# Video
+Click [here](https://youtu.be/jd0N7RG_bnA) to check out the video I uploaded on Youtube showing how to run the application.
+
+
 # Installation and Configuration Manual
 Download the [Install&ConfigManual](https://github.com/ianburkeixiv/ThirdYearProject/raw/master/Install%26ConfigManual.docx) word document above to install the various technologies used in this project.
 
