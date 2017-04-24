@@ -105,6 +105,8 @@
         //model.remove removes review document by its id
         gameReview.remove({
             _id : req.params.game_id
+        }, function(err, review) {
+ 
         });
     });
 
