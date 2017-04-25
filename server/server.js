@@ -53,6 +53,7 @@
     });
 
     // Mongoose model used to represent the data in the database
+    //Model is a contructor compiled from the schema. All document creation and retrieval from the database is handled by this model.
     var gameReview = mongoose.model('gameReview', {
         name: String,
         platform: String,
@@ -77,7 +78,7 @@
         // POST method route 
         //Uses HTTP POST request to post a new created review to database.
     app.post('/api/gameReviews', function(req, res) { //request and response parameters
-        //Once the review is posted from Ionic. Mongoose model.create processes the review data into the model and stores it into the database
+        //Once the review is posted from Ionic. Mongoose model.create processes the review data into a schema into the model and stores it into the database
         gameReview.create({
             name: req.body.name,
             platform: req.body.platform,
@@ -89,7 +90,8 @@
             if (err) //if theres an error..
             res.send(err); //Send an error response 
 
-            //Try to get all reviews after above is created
+            //Try to get all reviews after above is created.
+
             gameReview.find(function(err, games){
                 if(err) //if theres an error..
                 res.send(err) //Send an error response 
