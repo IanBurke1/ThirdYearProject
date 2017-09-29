@@ -1,3 +1,4 @@
+# 3rd Year Main Project
 # Design Document
 Check out the [Wiki](https://github.com/ianburkeixiv/ThirdYearProject/wiki) for the design document
 
